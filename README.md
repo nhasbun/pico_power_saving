@@ -29,3 +29,7 @@ For deep sleep,
 - [SleepyPico](https://github.com/ms1963/SleepyPico)
 - [Awaking the Raspberry Pico from deep sleep](https://ghubcoder.github.io/posts/awaking-the-pico/)
 - [PicoSleepDemo](https://github.com/ghubcoder/PicoSleepDemo/blob/master/main.c)
+
+## Sidenote for power optimizer geeks seeking for sub - 5 mA non-sleep current draw
+
+Record low underclocked non-sleep current consumption of 4.5 mA was observed when +5V was connected to VSYS rail instead of VBUS one to evade Shottky diode which adds some power loss by itself. But please pay attention: your mileage may vary because of manufacturing variations. Also you will lose reverse polarity protection in this case.
